@@ -1,0 +1,166 @@
+Turtle Shapes
+
+
+import tkinter
+import turtle
+
+
+window = turtle.Screen()
+window.bgcolor("black")
+
+turtle1= turtle.Turtle()
+turtle1.color("teal")
+turtle1.pensize(2)
+turtle1.shape("circle")
+turtle1.speed(0)
+
+
+
+
+def shape38():
+
+    for i in range(40):
+
+        turtle1.forward(60)
+        turtle1.right(90)
+        turtle1.left(40)
+        turtle1.right(60)
+
+shape38()
+
+turtle1.clear()
+
+
+def shape17():
+
+    for i in range(6):
+
+        turtle1.forward(100)
+        turtle1.left(60)
+
+    turtle1.left(60)
+    turtle1.forward(200)
+    turtle1.left(120)
+    turtle1.forward(100)
+    turtle1.left(120)
+    turtle1.forward(200)
+    turtle1.left(120)
+    turtle1.forward(100)
+    turtle1.left(120)
+    turtle1.forward(200)
+
+shape17()
+
+turtle1.clear()
+
+def shape16():
+
+    turtle1.left(80)
+    turtle1.forward(30)
+    turtle1.left(90)
+    turtle1.forward(70)
+    turtle1.right(90)
+    turtle1.forward(70)
+    turtle1.left(90)
+    turtle1.forward(30)
+    turtle1.left(90)
+    turtle1.forward(100)
+    turtle1.left(90)
+    turtle1.forward(100)
+    turtle1.back(30)
+    turtle1.right(90)
+    turtle1.forward(100)
+    turtle1.right(90)
+    turtle1.forward(30)
+    turtle1.right(90)
+    turtle1.forward(100)
+    turtle1.left(90)
+    turtle1.forward(100)
+    turtle1.left(90)
+    turtle1.forward(30)
+    turtle1.left(90)
+    turtle1.forward(100)
+    turtle1.left(90)
+    turtle1.forward(30)
+    turtle1.left(90)
+    turtle1.forward(10)
+    turtle1.right(90)
+    turtle1.forward(50)
+
+
+shape16()
+
+tkinter.mainloop()
+
+
+
+
+
+
+
+
+
+Madlibs 
+
+
+#Importing libraries
+import random
+
+
+#Setting up variables for games
+nouns = []
+verbs = []
+adjectives = []
+
+empty = []
+full = [nouns,verbs,adjectives,nouns,verbs,adjectives,nouns,adjectives]
+
+#Starting the game
+def start():
+    print("Welcome to mad libs 2.0. Enter information to start the game. ")
+    nouninput()
+
+
+#Gets multiple nouns from user
+def nouninput():
+    for i in range(6):
+        usernoun = input("Please enter a Noun: ")
+        nouns.append(usernoun)
+    verbinput()
+
+
+#Gets multiple verbs from user
+def verbinput():
+    for i in range(4):
+     print("Please enter a Verb")
+
+#Gets multiple adjectives from user
+def adjinput():
+    for i in range(3):
+     print("Please enter a Adjective")
+
+
+#Picks random words to go into story
+def randompicks():
+    print("")
+
+#Puts random words into the story
+def story():
+    print("[]")
+
+
+#Ask if the user wants to replace or restart
+def startover():
+    print("Thank you for playing would you like to restart and play again?")
+
+
+
+
+
+
+
+
+
+
+
+
