@@ -1,6 +1,10 @@
 Turtle Shapes
 
 
+
+
+
+
 import tkinter
 import turtle
 
@@ -103,6 +107,12 @@ tkinter.mainloop()
 Madlibs 
 
 
+
+
+
+
+
+
 #Importing libraries
 import random
 
@@ -152,6 +162,68 @@ def story():
 #Ask if the user wants to replace or restart
 def startover():
     print("Thank you for playing would you like to restart and play again?")
+
+
+
+
+
+
+
+Madlibs to reference!!!
+
+
+
+
+
+
+
+
+def start():
+    storyselection()
+
+def storyselection():
+    storyselection = input("Welcome to my madlibs, Type Funny to begin a funny adventure or type Last Day to start an adventure about the last day of school ")
+    if storyselection.lower() == funny:
+        funny()
+    if storyselection.lower() == lastday:
+        lastday()
+    elif print("Please input funny story or last day to begin "):
+
+
+        def funny():
+         name = input("Enter a name ")
+         place = input("Pick a place ")
+         adjective = input("Choose an adjective ")
+         verb = input("Choose a verb ")
+         noun = input("Choose a noun ")
+         verb1 = input("Choose a verb ")
+         car = input("Pick a car ")
+         adjective2 = input("Choose an adjective ")
+         verb3 = input("Choose another verb ")
+         color = input("Pick a color ")
+         adjective3 = input("Another adjective ")
+         noun2 = input("Another noun ")
+        funnystory()
+
+def funnystory(name,place,adjective,verb,noun,verb1,car,adjective2,verb3,color,adjective3,noun2):
+
+
+
+ def lastday():
+    name = input("Enter a name ")
+    verb = input("Pick a verb ")
+    adjective = input("Choose an adjective ")
+    verb = input("Choose a verb ")
+    noun = input("Choose a noun ")
+    shape = input("Choose a shape ")
+    car = input("Pick a car ")
+    adjective2 = input("Choose an adjective ")
+    verb3 = input("Choose another verb ")
+    color = input("Pick a color ")
+    color2 = input("Pick another color ")
+    adjective3 = input("Another adjective ")
+    verb4 = input("Another verb ")
+    lastdaystory()
 
 
 
