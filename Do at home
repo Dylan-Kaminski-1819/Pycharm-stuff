@@ -118,121 +118,53 @@ import random
 
 
 #Setting up variables for games
-nouns = []
-verbs = []
-adjectives = []
+noun = []
+verb = []
+adjective = []
 
 empty = []
-full = [nouns,verbs,adjectives,nouns,verbs,adjectives,nouns,adjectives]
+full = [noun,verb,adjective,noun,verb,adjective,]
 
 #Starting the game
 def start():
-    print("Welcome to mad libs 2.0. Enter information to start the game. ")
+    print("Welcome to mad libs 2.0. Please enter the following information to start the game. ")
     nouninput()
 
 
 #Gets multiple nouns from user
 def nouninput():
-    for i in range(6):
+    for i in range(2):
         usernoun = input("Please enter a Noun: ")
-        nouns.append(usernoun)
+        noun.append(usernoun)
     verbinput()
 
 
 #Gets multiple verbs from user
 def verbinput():
-    for i in range(4):
-     print("Please enter a Verb")
+    for i in range(2):
+        userverb = input("Please enter a Verb: ")
+        verb.append(userverb)
+    adjinput()
 
 #Gets multiple adjectives from user
 def adjinput():
-    for i in range(3):
-     print("Please enter a Adjective")
+    for i in range(2):
+        useradjective = input("Please enter a Adjective: ")
+        adjective.append(useradjective)
+    randompicks()
 
 
 #Picks random words to go into story
 def randompicks():
     print("")
+    story()
 
 #Puts random words into the story
 def story():
-    print("[]")
+    print("There was a" ,noun,"that was very" ,adjective)
+    startover()
 
 
-#Ask if the user wants to replace or restart
+#Ask if the user wants to restart
 def startover():
     print("Thank you for playing would you like to restart and play again?")
-
-
-
-
-
-
-
-Madlibs to reference!!!
-
-
-
-
-
-
-
-
-def start():
-    storyselection()
-
-def storyselection():
-    storyselection = input("Welcome to my madlibs, Type Funny to begin a funny adventure or type Last Day to start an adventure about the last day of school ")
-    if storyselection.lower() == funny:
-        funny()
-    if storyselection.lower() == lastday:
-        lastday()
-    elif print("Please input funny story or last day to begin "):
-
-
-        def funny():
-         name = input("Enter a name ")
-         place = input("Pick a place ")
-         adjective = input("Choose an adjective ")
-         verb = input("Choose a verb ")
-         noun = input("Choose a noun ")
-         verb1 = input("Choose a verb ")
-         car = input("Pick a car ")
-         adjective2 = input("Choose an adjective ")
-         verb3 = input("Choose another verb ")
-         color = input("Pick a color ")
-         adjective3 = input("Another adjective ")
-         noun2 = input("Another noun ")
-        funnystory()
-
-def funnystory(name,place,adjective,verb,noun,verb1,car,adjective2,verb3,color,adjective3,noun2):
-
-
-
- def lastday():
-    name = input("Enter a name ")
-    verb = input("Pick a verb ")
-    adjective = input("Choose an adjective ")
-    verb = input("Choose a verb ")
-    noun = input("Choose a noun ")
-    shape = input("Choose a shape ")
-    car = input("Pick a car ")
-    adjective2 = input("Choose an adjective ")
-    verb3 = input("Choose another verb ")
-    color = input("Pick a color ")
-    color2 = input("Pick another color ")
-    adjective3 = input("Another adjective ")
-    verb4 = input("Another verb ")
-    lastdaystory()
-
-
-
-
-
-
-
-
-
-
-
-
